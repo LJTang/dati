@@ -1,0 +1,90 @@
+/* pages/prize_more/prize_more.wxss */
+page{
+  background-color: #f5b653;
+}
+.head{
+  width: 270rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  margin: 3% auto;
+}
+.head view{
+  font-size: 38rpx;
+  color: #fff;
+  margin-right: 20rpx;
+}
+.head image{
+  width: 90rpx;
+  height: 76rpx;
+  display: block;
+}
+.introduce{
+  position: fixed;
+  background-color: #fbfaf9;
+  width: 94%;
+  left: 3%;
+  top: 140rpx;
+  bottom: 40rpx;
+  border-radius: 10px;
+}
+.introduce .y_zhou{
+  position: absolute;
+  top: 4%;
+  bottom: 4%;
+  left: 3%;
+  right: 3%;
+  background-color: #e8c792;
+  border-radius: 10px;
+}
+.introduce .content .img_box{
+  width: 100%;
+  height: 380rpx;
+  position: relative;
+}
+.introduce .content .img_box .img{
+  width: 450rpx;
+  height: 380rpx;
+  display: block;
+  margin: 0 auto;
+}
+.introduce .content .img_box .bnt{
+  width: 160rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 55rpx;
+  background-color: #ef9029;
+  position: absolute;
+  right: 3%;
+  bottom: 10rpx;
+}
+.introduce .content .text{
+  width: 94%;
+  background-color: #F5E9D7;
+  border-radius: 10px;
+  position: absolute;
+  top: 380rpx;
+  bottom: 3%;
+  left: 3%;
+}
+.introduce .content .text .text_y{
+  width: 90%;
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  overflow-y: auto;
+}
+.introduce .content .text .text_y .title{
+  font-size: 46rpx;
+  margin-bottom: 20rpx;
+}
+.introduce .content .text .text_y .txt{
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 2em;
+}

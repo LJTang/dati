@@ -1,0 +1,77 @@
+<view class='top_time flex_center'>
+  <view>
+    <view class='title'>倒计时</view>
+    <view class='djs'>{{countDownNum}}</view>
+  </view>
+</view>
+<view class='num'>第{{num}}题</view>
+<view class='problem'>{{postList[index].name}}</view>
+
+
+  
+
+
+<view class='judge container'>
+  <button class='no' data-id='2' bindtap="btnOpClick" hover-class="active">
+    <image src='../../img/no.png'></image>
+  </button>
+  <button class='yes' data-id='1' bindtap="btnOpClick" hover-class="active">
+    <image src='../../img/yes.png'></image>
+  </button>
+</view>
+
+<view class='fail flex_center' wx:if="{{fail}}">
+  <view class='mask'></view>
+  <view class='box'>
+    <image class='title' src='../../img/fail.png'></image>
+    <view class='cf top'>
+      <button bindtap="onShareAppMessage" open-type="share" style="padding:0;">
+        <view class='fl left'>邀请好友一起考级</view>
+        <view class='fr right'><image src='../../img/fenxiang.png'></image></view>
+      </button>
+    </view>
+    <view class='goindex' bindtap='goindex'>点击跳过>></view>
+  </view>
+</view>
+
+<view class='success' style='display:flex;justify-content:center;' wx:if="{{success}}">
+  <view class='mask'></view>
+  <view class='success_box'>
+    <image class='s_title' src='../../img/success.png'></image>
+    <view class='top'>
+      <view class='title'>本次成绩</view>
+      <view class='num'>{{defen}}</view>
+      <view class='nums'>本周排名500+，最高7分</view>
+    </view>
+    <view class='paiming'>
+      <view class='pai container_c'>
+        <view class='pai_list'>
+          <image class='img' src='../../img/touxiang.jpg'></image>
+          <view class='name'>大佬</view>
+          <view class='fen'>500分</view>
+          <view class='number'>1</view>
+        </view>
+        <view class='pai_list'>
+          <image class='img' src='../../img/touxiang.jpg'></image>
+          <view class='name'>大佬</view>
+          <view class='fen'>489分</view>
+          <view class='number'>2</view>
+        </view>
+        <view class='pai_list'>
+          <image class='img' src='../../img/touxiang.jpg'></image>
+          <view class='name'>大佬</view>
+          <view class='fen'>488分</view>
+          <view class='number'>3</view>
+        </view>
+      </view>
+      <navigator class='bnt cf' hover-class='none' url='../../img/'>
+        <text class='fl'>再玩一次</text>
+        <image class='fr' src='../../img/shua.png'></image>
+      </navigator>
+    </view>
+    <view class='cf down'>
+      <view class='fl'><image class='fl' src='../../img/fenxiang.png'></image><view class='fl'>分享结果</view></view>
+      <view class='fr'><image class='fl' src='../../img/fenlei.png'></image><view class='fl'>更多好玩</view></view>
+    </view>
+  </view>
+</view>

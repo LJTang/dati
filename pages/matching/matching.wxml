@@ -1,0 +1,208 @@
+<view class='pd_box' hidden="{{pipei_Bool}}">
+  <image class='back' src="../../img/pdback.png"></image>
+  <view class='center'>
+    <image class='quan' src='../../img/peiduiq.png'></image>
+    <image class='logo_q' src='../../img/logo_q.png'></image>
+    <image class='logo' src='{{userInfo.avatar}}'></image>
+  </view>
+  <view class='infor'>
+    <view class='name'>{{userInfo.name}}</view>
+    <view class='leven'>等级 痴心花粉</view>
+    <view class='num'><image src='../../img/bi.png'></image> <text>{{money}}</text></view>
+  </view>
+</view>
+
+<!-- 游戏 -->
+<view class='game_box' hidden="{{game_Bool}}">
+  <image class="vs" src="../../img/vs.png"></image>
+  <view class='vs_box cf'>
+    <view class='cf left_box fl'>
+      <image class='fl img' src='{{play[0][0].avatar}}'></image>
+      <view class='fl name omit'>{{play[0][0].name}}</view>
+    </view>
+    <view class='cf right_box fr'>
+      <image class='fr img' src='{{play[1][0].avatar}}'></image>
+      <view class='fr name omit'>{{play[1][0].name}}</view>
+    </view>
+    <view class='time'>
+      <view class='num'>{{countDownNum}}</view>
+    </view>
+  </view>
+  <view class='subject_box'>
+    <!-- <view class='subject'>选出代表名词的四字成语</view>
+    <view class='option'>
+      <view class='list'>手舞足蹈</view>
+      <view class='list'>极目远眺</view>
+      <view class='list'>日月星辰</view>
+      <view class='list'>扬长而去</view>
+      <view class='zshi zshi1'></view>
+      <view class='zshi zshi2'></view>
+    </view> -->
+
+    <view class='num'>第{{num}}题</view>
+    <view class='problem'>{{postList[index].name}}</view>
+    <view class='judge container' hidden="{{click_Bool}}">
+      <button class='no' id='1' bindtap="btnOpClick" hover-class="active">
+        <image src='../../img/no.png'></image>
+      </button>
+      <button class='yes' id='2' bindtap="btnOpClick" hover-class="active">
+        <image src='../../img/yes.png'></image>
+      </button>
+    </view>
+
+    <view class='copyright'>本题由<text>河南森软信息技术有限公司</text>提供</view>
+  </view>
+</view>
+<!-- 成功 -->
+<view class='success jieguo' hidden="{{success}}">
+  <image class="vs" src="../../img/vs.png"></image>
+  <view class='vs_box cf'>
+    <view class='cf left_box fl'>
+      <view class='img_box fl'>
+        <image class='fr img' src='{{play[0][0].avatar}}'></image>
+      </view>
+      <view class='fl name omit'>{{play[0][0].name}}</view>
+    </view>
+    <view class='cf right_box fr'>
+      <view class='img_box fr'>
+        <image class='fl img' src='{{play[1][0].avatar}}'></image>
+      </view>
+      <view class='fr name omit'>{{play[1][0].name}}</view>
+    </view>
+  </view>
+
+  <view class='fen cf'>
+    <image class='fen_img' src='../../img/cg.png'></image>
+    <view class='left fl'>
+      <image class='sj' src='../../img/hong.png'></image>
+      <view class='cf leven fl'>
+        <view class='fl'>1级</view>
+        <view class='fl xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num fl'>230分</view>
+    </view>
+    <view class='left fr right'>
+      <image class='sj' src='../../img/lan.png'></image>
+      <view class='cf leven fr'>
+        <view class='fr'>1级</view>
+        <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num'>230分</view>
+    </view>
+  </view>
+  <view class='result'>
+    <image class='back' src='../../img/ty.png'></image>
+    <view class='text'><image src='../../img/bi.png'></image> +27</view>
+  </view>
+  <view>
+    <view class='jixu'>继续挑战</view>
+    <view class='fenxiang'><image src='../../img/bi.png'></image> 炫耀成绩</view>
+  </view>
+  <view class='fenx'>
+    <view>分享到微信圈</view>
+    <image src='../../img/pyq.png'></image>
+    <view>可领取30</view>
+    <image src='../../img/bi.png'></image>
+  </view>
+</view>
+<!-- 失败 -->
+<view class='fail jieguo' hidden='{{fail}}' >
+  <image class="vs" src="../../img/vs.png"></image>
+  <view class='vs_box cf'>
+    <view class='cf left_box fl'>
+      <view class='img_box fl'>
+        <image class='fr img' src='../../img/touxiang.jpg'></image>
+      </view>
+      <view class='fl name omit'>大神</view>
+    </view>
+    <view class='cf right_box fr'>
+      <view class='img_box fr'>
+        <image class='fl img' src='../../img/touxiang.jpg'></image>
+      </view>
+      <view class='fr name omit'>大神</view>
+    </view>
+  </view>
+  <view class='fen cf'>
+    <view class='left fl'>
+      <image class='sj' src='../../img/hong.png'></image>
+      <view class='cf leven fr'>
+        <view class='fr'>1级</view>
+        <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num'>230分</view>
+    </view>
+    <view class='left fr right'>
+      <image class='sj' src='../../img/lan.png'></image>
+      <view class='cf leven fl'>
+        <view class='fr'>1级</view>
+        <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num'>230分</view>
+    </view>
+  </view>
+  <view class='result'>
+    <image class='back' src='../../img/ty.png'></image>
+    <view>挑战失败</view>
+  </view>
+  <view>
+    <view class='jixu'>继续挑战</view>
+    <view class='fenxiang'><image src='../../img/bi.png'></image> 分享结果</view>
+  </view>
+  <view class='fenx'>
+    <view>分享到微信圈</view>
+    <image src='../../img/pyq.png'></image>
+    <view>可领取30</view>
+    <image src='../../img/bi.png'></image>
+  </view>
+</view>
+<!-- 平局 -->
+<view class='drew jieguo' hidden="{{drew}}">
+  <image class="vs" src="../../img/vs.png"></image>
+  <view class='vs_box cf'>
+    <view class='cf left_box fl'>
+      <view class='img_box fl'>
+        <image class='fr img' src='../../img/touxiang.jpg'></image>
+      </view>
+      <view class='fl name omit'>大神</view>
+    </view>
+    <view class='cf right_box fr'>
+      <view class='img_box fr'>
+        <image class='fl img' src='../../img/touxiang.jpg'></image>
+      </view>
+      <view class='fr name omit'>大神</view>
+    </view>
+  </view>
+  <view class='fen cf'>
+    <image class='fen_img' src='../../img/pj.png'></image>
+    <view class='left fl'>
+      <image class='sj' src='../../img/hong.png'></image>
+      <view class='cf leven fl'>
+        <view class='fl'>1级</view>
+        <view class='fl xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num fl'>230分</view>
+    </view>
+    <view class='left fr right'>
+      <image class='sj' src='../../img/lan.png'></image>
+      <view class='cf leven fr'>
+        <view class='fr'>1级</view>
+        <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
+      </view>
+      <view class='num'>230分</view>
+    </view>
+  </view>
+  <view class='result'>
+    <image class='back' src='../../img/ty.png'></image>
+    <view class='text'><image src='../../img/jb.png'></image> ×1</view>
+  </view>
+  <view>
+    <view class='jixu'>继续挑战</view>
+    <view class='fenxiang'><image src='../../img/bi.png'></image> 分享结果</view>
+  </view>
+  <view class='fenx'>
+    <view>分享到微信圈</view>
+    <image src='../../img/pyq.png'></image>
+    <view>可领取30</view>
+    <image src='../../img/bi.png'></image>
+  </view>
+</view>

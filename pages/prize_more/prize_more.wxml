@@ -1,0 +1,21 @@
+<view class='cf head'>
+  <view class='fl'>商品介绍</view>
+  <image class='fl' src='../../img/libao.png'></image>
+</view>
+<view class='introduce'>
+  <view class='y_zhou'>
+    <view class='content'>
+      <view class='img_box'>
+        <image class='img' src='{{url}}{{d_desc.avatar}}'></image>
+        <view class='bnt'>兑换</view>
+      </view>
+      <view class='text'>
+        <view class='text_y'>
+          <view class='title'>{{d_desc.name}}</view>
+          <view class='txt'>{{d_desc.desc}}</view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

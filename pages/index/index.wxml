@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view> -->
+<view class='follow' bindtap='follow_show'>
+  <view>关注</view>
+  <view>公众号</view>
+</view>
+<view class='follow_show flex_center' hidden='{{follow_show}}'>
+  <view class='mask' bindtap='follow_show'></view>
+  <view class='show_box'>
+    <image class='back' src='../../img/gz.png'></image>
+    <view class='title'>关注步骤</view>
+    <view class='content'>
+      <view class='text'>
+        <text class='fl'>1.点击右上角</text>
+        <image class='fl' src='../../img/xcx.png'></image>
+        <text>，选择<text class='strong'>【关于娱乐圈考级大赛】</text></text>
+      </view>
+      <view class='text'>
+        <text>2.点击</text>
+        <text class='strong'>【相关公众号】</text>
+      </view>
+      <view class='text'>
+        <text>3.关注公众号，</text>
+        <text class='strong'>点击【进入公众号】</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- <view class='index_title'>娱乐圈考级大赛</view> -->
+<view class='ranking'>
+  <view class='index_type'>
+    <view class='paiwei'>排位赛</view>
+    <view class='hengx'></view>
+  </view>
+  <view class='shuoming'>连胜3局可赢得冲关赛门票1张全部通关可获赠50张门票</view>
+  <view class='pk_bnt' bindtap="jump_PK">
+    <image src='../../img/px.png'></image>
+    开始PK
+  </view>
+  <view class='bi_box cf'>
+    <image class='fl bi' src='../../img/bi.png'></image>
+    <view class='fl num'>{{money}}个</view>
+    <view class='nums fl'>（100个金币兑换1张<image src='../../img/piao.png'></image>）</view>
+  </view>
+</view>
+<view class='challenge'>
+  <view class='index_type'>
+    <view class='paiwei'>冲关赛</view>
+    <view class='hengx'></view>
+  </view>
+  <view class='shuoming'>连续答对25题可领取一个娃娃</view>
+  <view bindtap='{{click_Bool==true?"judge":""}}' class='pk_bnt'>
+    <image src='../../img/tiaoz.png'></image>
+    开始挑战
+  </view>
+  <view class='piao_box cf'>
+    <image class='piao fl' src='../../img/piao.png'></image>
+    <view class='fl num'>{{you_volume}}张</view>
+  </view>
+</view>
+
+<view class='fix_nav container_c'>
+  <view class='navigator' bindtap='index'>
+    <view class='fnav_list'>
+      <image src='../../img/nav1.png'></image>
+      <text class='on'>我要挑战</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='ranking'>
+    <view class='fnav_list'>
+      <image src='../../img/nav2_1.png'></image>
+      <text>排行榜</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='prize'>
+    <view class='fnav_list'>
+      <image src='../../img/nav3_1.png'></image>
+      <text>奖品</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='my'>
+    <view class='fnav_list'>
+      <image src='../../img/nav4_1.png'></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>
+
+<view class="popUp_Box" wx:if="{{hasUserInfo}}">
+  <view class="shadow"></view>
+  <view class="show_Layer authorized_Box">
+    <view class="">
+      <view class="authorized_Describe">授权</view>
+      <view class="authorized_Btn">
+        <view class="btn_Cancel" bindtap="popClose">取消</view>
+        <view class="btn_OK"><button open-type="getUserInfo" bindgetuserinfo="getUserInfo">确定</button></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='fail flex_center' wx:if="{{fail}}">
+  <view class='mask' bindtap="close"></view>
+  <view class='box'>
+    <!--<image class='title' src='../../img/fail.png'></image>-->
+    <view class='cf top'>
+      <button bindtap="onShareAppMessage" open-type="share" style="padding:0;">
+        <view class='fl left'>门票不足,分享朋友群，可得一张门票</view>
+        <view class='fr right'><image src='../../img/fenxiang.png'></image></view>
+      </button>
+    </view>
+  </view>
+</view>

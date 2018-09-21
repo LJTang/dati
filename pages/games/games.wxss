@@ -1,0 +1,368 @@
+/* pages/games/games.wxss */
+page{
+  background-color: #03abfd;
+}
+.game_box .vs{
+  width: 468rpx;
+  height: 262rpx;
+  display: block;
+  margin: 0 auto;
+}
+.game_box .vs_box{
+  width: 94%;
+  margin: 77rpx auto 0 auto;
+  position: relative;
+}
+.game_box .vs_box .time{
+  width: 160rpx;
+  height: 160rpx;
+  border: 6px solid #03abfd;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -86rpx;
+  bottom: -10px;
+  background-color: #f18136;
+}
+.game_box .vs_box .time .num{
+  color: #fff;
+  width: 88rpx;
+  height: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  border-radius: 100%;
+  background-color: #03abfd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -44rpx;
+  margin-left: -44rpx;
+}
+.game_box .vs_box .left_box{
+  width: 50%;
+  height: 100rpx;
+  background-color: #d870cb;
+  border-bottom-left-radius: 10px;
+}
+.game_box .vs_box .right_box{
+  width: 50%;
+  height: 100rpx;
+  background-color: #5fc3f4;
+  border-bottom-right-radius: 10px;
+}
+.game_box .vs_box .left_box .img,.game_box .vs_box .right_box .img{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  border-radius: 100%;
+  margin-top: -44rpx;
+  margin-left:10rpx;
+  margin-right:10rpx;
+}
+.game_box .vs_box .left_box .name,.game_box .vs_box .right_box .name{
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10rpx;
+}
+.game_box .subject_box{
+  margin-top: 20rpx;
+}
+.game_box .subject_box .subject{
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.game_box .subject_box .option{
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  padding: 60rpx 0;
+}
+.game_box .subject_box .option .zshi{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 16rpx;
+  background-color: #375eef;
+  border-radius:5px; 
+}
+.game_box .subject_box .option .zshi1{
+  left: 0;
+}
+.game_box .subject_box .option .zshi2{
+  right: 0;
+}
+.game_box .subject_box .option .list{
+  width: 424rpx;
+  height: 94rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 94rpx;
+  font-size: 36rpx;
+  color: #375eef;
+  border-radius: 50rpx;
+  margin: 0 auto 20rpx auto;
+  box-shadow: 1px 2px 5px #444;
+}
+.game_box .copyright{
+  position: fixed;
+  left: 0;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: #fff;
+  text-shadow: 5px 5px 20px #375eef;
+}
+.game_box .copyright text{
+  font-size: 36rpx;
+}
+.game_box .num{
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.game_box .problem{
+  width: 90%;
+  font-size: 40rpx;
+  color: #fff;
+  text-align: center;
+  margin: 100rpx auto 0 auto;
+  line-height: 170%;
+}
+.game_box .judge{
+  width: 94%;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, .3);
+  position: fixed;
+  left: 3%;
+  bottom: 9%;
+  box-sizing: border-box;
+}
+.game_box .judge .no{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: #5757ed;
+  border-radius: 10px;
+  position: relative;
+}
+.game_box .judge .yes{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: #f51756;
+  border-radius: 10px;
+  position: relative;
+}
+.game_box .judge image{
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game_box .judge .active {
+  transform: translateY(4px);
+}
+.jieguo .vs{
+  width: 468rpx;
+  height: 262rpx;
+  display: block;
+  margin: 0 auto;
+}
+.jieguo .vs_box{
+  width: 100%;
+  margin: 58rpx auto 0 auto;
+  position: relative;
+}
+.jieguo .vs_box .left_box .img_box{
+  width: 140rpx;
+  height: 80rpx;
+  background-color: #d870cb;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.jieguo .vs_box .right_box .img_box{
+  width: 140rpx;
+  height: 80rpx;
+  background-color: #5fc3f4;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+.jieguo .vs_box .left_box .img,.jieguo .vs_box .right_box .img{
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+  border-radius: 100%;
+  margin-top: 5rpx;
+  margin-left:10rpx;
+  margin-right:10rpx;
+}
+.jieguo .vs_box .left_box .name,.jieguo .vs_box .right_box .name{
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #fff;
+  margin: 30rpx 10rpx 0 10rpx;
+}
+.jieguo .fen{
+  position: relative;
+}
+.jieguo .fen .fen_img{
+  position: absolute;
+  width: 272rpx;
+  height: 222rpx;
+  display: block;
+  top: -125rpx;
+  left: 50%;
+  margin-left: -136rpx;
+  z-index: 2;
+}
+.jieguo .fen .left{
+  width: 53%;
+  position: relative;
+  height: 114rpx;
+  background-color: #d870cb;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.jieguo .fen .right{
+  width:40%;
+  position: relative;
+  height: 114rpx;
+  background-color: #5fc3f4;
+}
+.jieguo .fen .right .sj{
+  left: -30rpx;
+}
+.jieguo .fen .left .sj{
+  width: 30rpx;
+  height: 114rpx;
+  position: absolute;
+  top: 0;
+  right: -20rpx;
+}
+.jieguo .fen .left .leven{
+  width: 100%;
+  font-size: 28rpx;
+  padding: 0 20rpx 10rpx 20rpx;
+  box-sizing: border-box;
+}
+.jieguo .fen .left .xing_box image{
+  width: 34rpx;
+  height: 34rpx;
+  display: block;
+  float: left;
+  margin: 0 4rpx;
+}
+.jieguo .fen .left .num{
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin: 0 20rpx 0 20rpx;
+  text-align: left;
+}
+.jieguo .fen .right .num{
+  text-align: right;
+}
+.jieguo .result{
+  width: 536rpx;
+  height: 220rpx;
+  line-height: 220rpx;
+  color: #fff;
+  font-size: 88rpx;
+  font-weight: 700;
+  margin: 80rpx auto;
+  position: relative;
+  text-align: center;
+}
+.jieguo .result .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 536rpx;
+  height: 220rpx;
+  display: block;
+}
+.jieguo .result .text{
+  display: flex;
+  justify-content:center;
+}
+.jieguo .result .text image{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 55rpx 30rpx 0 0;
+}
+.jieguo .jixu{
+  width: 380rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #ff06d9;
+  margin: 0 auto 40rpx auto;
+}
+.jieguo .fenxiang{
+  width: 380rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  line-height: 80rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #f18136;
+  margin: 0 auto 40rpx auto;
+  display: flex;
+  justify-content:center;
+}
+.jieguo .fenxiang image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.jieguo .fenx{
+  display: flex;
+  font-size: 24rpx;
+  color: #fff;
+  justify-content:center;
+}
+.jieguo .fenx image{
+  width: 28rpx;
+  height: 28rpx;
+  margin: 0 10rpx;
+}
+.success,.fail,.drew{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #03abfd;
+}
+.drew .result .text image{
+  width: 216rpx;
+  height: 200rpx;
+  display: block;
+  margin: 5rpx 30rpx 0 0;
+}
+.drew .fen .left{
+  width: 45%;
+}
+.drew .fen .right{
+  width:45%;
+}
+.fail .fen .left{
+  width: 40%;
+}
+.fail .fen .right{
+  width:53%;
+}

@@ -1,0 +1,48 @@
+<view class='tab cf'>
+  <view class='fl jiang' bindtap='receive'><image src='../../img/h_bnt.png'></image>挑战领奖</view>
+  <view class='fr yili' bindtap='record'><image src='../../img/l_bnt.png'></image>领奖记录</view>
+</view>
+<view class='list_box'>
+  <view class='zhou_y'>
+    <block wx:for="{{record}}" wx:key="">
+      <view class='cf list'>
+        <view class='left fl'>
+          <view class='name'>{{item.prize_name}}</view>
+          <view class='time'>{{item.add_time}}</view>
+        </view>
+        <view class='right fr'><view class='fr'>-{{item.prize_value}}</view><image class='fl' src='../../img/y_bi.png'></image></view>
+      </view>
+    </block>
+
+    <view class="data_suggest" hidden="{{len_Bool}}">没有更多数据了...</view>
+  </view>
+</view>
+
+
+
+<view class='fix_nav container_c'>
+  <view class='navigator' bindtap='index'>
+    <view class='fnav_list'>
+      <image src='../../img/nav1_1.png'></image>
+      <text>我要挑战</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='ranking'>
+    <view class='fnav_list'>
+      <image src='../../img/nav2_1.png'></image>
+      <text>排行榜</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='prize'>
+    <view class='fnav_list'>
+      <image src='../../img/nav3.png'></image>
+      <text class='on'>奖品</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='my'>
+    <view class='fnav_list'>
+      <image src='../../img/nav4_1.png'></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>

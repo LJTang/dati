@@ -1,0 +1,58 @@
+<view class='my_box flex_center'>
+  <image class='back' src='../../img/my.png'></image>
+  <view class='logo'>
+    <image src='{{userInfo.avatar}}'></image>
+    <view class='leven'>痴心花粉</view>
+  </view>
+  <view style='width:100%;'>
+    <view class='prop container'>
+      <view class='prop_list cf'>
+        <image class='fl' src='../../img/bi.png'></image>
+        <text class='fl'>{{money}}个</text>
+      </view>
+      <view class='prop_list cf'>
+        <image class='fl' style='width:68rpx;height:40rpx;margin-top:20rpx;' src='../../img/piao.png'></image>
+        <text class='fl'>{{you_volume}}张</text>
+      </view>
+      <view class='prop_list cf'>
+        <image class='fl' src='../../img/y_bi.png'></image>
+        <text class='fl'>{{volume}}张</text>
+      </view>
+    </view>
+    <view class='service cf'>
+      <view class='left fl' bindtap='prize'>兑换 ></view>
+      <view class='right fr'>
+        <image class='fl' src='../../img/kf.png'></image>
+        <view class='fl'>微信客服：{{wxh}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='fenxiang'><button bindtap="onShareAppMessage" open-type="share">分享到群可获得30金币</button></view>
+</view>
+
+<view class='fix_nav container_c'>
+  <view class='navigator' bindtap='index'>
+    <view class='fnav_list'>
+      <image src='../../img/nav1_1.png'></image>
+      <text>我要挑战</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='ranking'>
+    <view class='fnav_list'>
+      <image src='../../img/nav2_1.png'></image>
+      <text>排行榜</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='prize'>
+    <view class='fnav_list'>
+      <image src='../../img/nav3_1.png'></image>
+      <text>奖品</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='my'>
+    <view class='fnav_list'>
+      <image src='../../img/nav4.png'></image>
+      <text class='on'>我的</text>
+    </view>
+  </view>
+</view>

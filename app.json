@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/matching/matching",
+    "pages/my/my",
+    "pages/game/game",
+    "pages/games/games",
+    "pages/prize_record/prize_record",
+    "pages/prize_more/prize_more",
+    "pages/prize/prize",
+    "pages/ranking_lists/ranking_lists",
+    "pages/ranking_list/ranking_list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#cf7df0",
+    "navigationBarTitleText":"娱乐圈考级大赛",
+    "navigationBarTextStyle":"#fff"
+  }
+  
+}

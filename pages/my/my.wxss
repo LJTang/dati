@@ -1,0 +1,122 @@
+/* pages/prize/prize.wxss */
+page{
+  background-color: #F8CF8F;
+}
+.my_box{
+  position: relative;
+  width: 100%;
+  height: 500rpx;
+  margin-top: 50rpx;
+}
+.my_box .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:500rpx;
+  z-index: -1;
+}
+.my_box .logo{
+  width: 140rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 50%;
+  margin-left: -70rpx;
+}
+.my_box .logo image{
+  width: 140rpx;
+  height: 140rpx;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  display: block;
+}
+.my_box .logo .leven{
+  width: 110rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background-color: #f5b653;
+  color: #fff;
+  font-size: 22rpx;
+  position: absolute;
+  bottom: -30rpx;
+  left: 50%;
+  margin-left: -55rpx;
+}
+.my_box .prop{
+  width: 85%;
+  margin: 60rpx auto;
+}
+.my_box .prop .prop_list{
+  width: 186rpx;
+  height: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 3px;
+  background-color: #5a41f2;
+}
+.my_box .prop .prop_list image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: 10rpx 15rpx 0 15rpx;
+}
+.my_box .service{
+  width: 85%;
+  margin: 0 auto;
+}
+.my_box .service .left{
+  width: 160rpx;
+  height: 70rpx;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 3px;
+  background-color: #5d64f6;
+}
+.my_box .service .right{
+  width: 430rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 3px;
+  background-color: #59bb59;
+}
+.my_box .service .right image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  margin: 15rpx 20rpx 0 20rpx;
+}
+.my_box .service .right view{
+  font-size: 28rpx;
+  color: #fff;
+}
+.my_box .fenxiang{
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fdfd9a;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fa4f91;
+  position: absolute;
+  bottom: -40rpx;
+  left: 50%;
+  margin-left: -30%;
+}
+
+.my_box .fenxiang button{
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fdfd9a;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fa4f91;
+  padding:0;
+}

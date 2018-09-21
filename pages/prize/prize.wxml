@@ -1,0 +1,50 @@
+<view class='tab cf'>
+  <view class='fl jiang' bindtap='receive'><image src='../../img/h_bnt.png'></image>挑战领奖</view>
+  <view class='fr yili' bindtap='record'><image src='../../img/l_bnt.png'></image>领奖记录</view>
+</view>
+<view class='list_box'>
+  <view class='zhou_y container'>
+    <block wx:for="{{prize}}" wx:key="">
+      <navigator url='/pages/prize_more/prize_more?id={{item.id}}' hover-class='none' class='list'>
+        <view class='img_box'>
+          <image class='img' src='{{url}}{{item.avatar}}'></image>
+          <view class='bnt'>兑换</view>
+        </view>
+        <view class='cf price'>
+          <image class='fl' src='../../img/y_bi.png'></image>
+          <view class='fl'>×{{item.value}}</view>
+        </view>
+      </navigator>
+    </block>
+    <view class="data_suggest" hidden="{{len_Bool}}">没有更多数据了...</view>
+  </view>
+</view>
+
+
+
+<view class='fix_nav container_c'>
+  <view class='navigator' bindtap='index'>
+    <view class='fnav_list'>
+      <image src='../../img/nav1_1.png'></image>
+      <text>我要挑战</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='ranking'>
+    <view class='fnav_list'>
+      <image src='../../img/nav2_1.png'></image>
+      <text>排行榜</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='prize'>
+    <view class='fnav_list'>
+      <image src='../../img/nav3.png'></image>
+      <text class='on'>奖品</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='my'>
+    <view class='fnav_list'>
+      <image src='../../img/nav4_1.png'></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>

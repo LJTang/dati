@@ -1,0 +1,75 @@
+/* pages/prize/prize.wxss */
+page{
+  background-color: #f5b653;
+}
+.tab{
+  padding: 3% 0;
+}
+.tab view{
+  width: 220rpx;
+  height: 80rpx;
+  position: relative;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.tab view image{
+  width: 220rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.tab .jiang{
+  margin-left: 100rpx;
+  color: rgba(255, 255, 255, .5)
+}
+.tab .yili{
+  margin-right: 100rpx;
+}
+.list_box{
+  position: fixed;
+  background-color: #FBFAF9;
+  width: 94%;
+  left: 3%;
+  top: 140rpx;
+  bottom: 140rpx;
+  border-radius: 10px;
+}
+.list_box .zhou_y{
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  left: 5%;
+  right: 5%;
+  overflow-y: auto;
+}
+.list_box .list{
+  padding: 3% 0;
+  border-bottom: 1px solid #f1f1f9;
+}
+.list_box .list:last-child{
+  border-bottom: 0;
+}
+.list_box .list .name{
+  font-size: 32rpx;
+}
+.list_box .list .time{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.list_box .list .right{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.list_box .list .right image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.list_box .list .right view{
+  margin-top: 10rpx;
+  margin-left: 15rpx;
+}

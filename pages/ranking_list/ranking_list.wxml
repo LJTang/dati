@@ -1,0 +1,109 @@
+<!--pages/ranking_list/ranking_list.wxml-->
+<view class='tab cf'>
+  <view class='fl jiang' bindtap='ranking_list'><image src='../../img/h_bnt.png'></image>奖品榜</view>
+  <view class='fr yili' bindtap='ranking_lists'><image src='../../img/l_bnt.png'></image>毅力榜</view>
+</view>
+<view class='list_box'>
+  <view class='zhou_y'>
+    <block wx:for="{{behind}}" wx:key="{{index}}">
+      <view class='list cf' wx:if="{{index==0}}">
+        <image class='on win' src='../../img/guan.png'></image>
+        <view class='num fl'>{{index+1}}</view>
+        <image class='img fl' src='{{item.avatar}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/zuan.png'></image><view class='fl'>痴心花粉</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.wawa_count}}个娃娃</view>
+      </view>
+      <view class='list cf' wx:elif="{{index==1}}">
+        <image class='win' src='../../img/guan.png'></image>
+        <view class='num fl'>{{index+1}}</view>
+        <image class='img fl' src='{{item.avatar}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/zuan.png'></image><view class='fl'>痴心花粉</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.wawa_count}}个娃娃</view>
+      </view>
+      <view class='list cf' wx:elif="{{index==2}}">
+        <image class='win' src='../../img/guan.png'></image>
+        <view class='num fl'>{{index+1}}</view>
+        <image class='img fl' src='{{item.avatar}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/zuan.png'></image><view class='fl'>痴心花粉</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.wawa_count}}个娃娃</view>
+      </view>
+
+      <view class='list lists cf' wx:else>
+        <view class='num fl'>{{index+1}}</view>
+        <image class='img fl' src='{{item.avatar}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/xing.png'></image><view class='fl'>痴心花粉</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.wawa_count}}个娃娃</view>
+      </view>
+
+    </block>
+    <view class="data_suggest" hidden="{{len_Bool}}">没有更多数据了...</view>
+    <!--
+    <block wx:for="{{three}}" wx:key="">
+
+      <view class='list cf'>
+        <image class='{{ item.on ==  true ? "on" : ""}} win' src='../../img/guan.png'></image>
+        <view class='num fl'>{{item.num}}</view>
+        <image class='img fl' src='{{item.img}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/zuan.png'></image><view class='fl'>{{item.leven}}级</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.cishu}}个娃娃</view>
+      </view>
+    </block>
+    <block wx:for="{{behind}}" wx:key="">
+      <view class='list lists cf'>
+        <view class='num fl'>{{item.num}}</view>
+        <image class='img fl' src='{{item.img}}'></image>
+        <view class='content fl'>
+          <view class='name'>{{item.name}}</view>
+          <view class='leven'><image class='fl' src='../../img/xing.png'></image><view class='fl'>{{item.leven}}级</view></view>
+        </view>
+        <view class='cishu fr'>获得{{item.cishu}}个娃娃</view>
+      </view>
+    </block>
+    -->
+  </view>
+</view>
+
+
+
+
+<view class='fix_nav container_c'>
+  <view class='navigator' bindtap='index'>
+    <view class='fnav_list'>
+      <image src='../../img/nav1_1.png'></image>
+      <text>我要挑战</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='ranking'>
+    <view class='fnav_list'>
+      <image src='../../img/nav2.png'></image>
+      <text class='on'>排行榜</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='prize'>
+    <view class='fnav_list'>
+      <image src='../../img/nav3_1.png'></image>
+      <text>奖品</text>
+    </view>
+  </view>
+  <view class='navigator' bindtap='my'>
+    <view class='fnav_list'>
+      <image src='../../img/nav4_1.png'></image>
+      <text>我的</text>
+    </view>
+  </view>
+</view>

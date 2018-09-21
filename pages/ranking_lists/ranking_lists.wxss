@@ -1,0 +1,120 @@
+/* pages/ranking_lists/ranking_lists.wxss *//* pages/ranking_list/ranking_list.wxss */
+page{
+  background-color: #f5b653;
+}
+.tab{
+  padding: 3% 0;
+}
+.tab view{
+  width: 220rpx;
+  height: 80rpx;
+  position: relative;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.tab view image{
+  width: 220rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.tab .jiang{
+  margin-left: 100rpx;
+  color: rgba(255, 255, 255, .5)
+}
+.tab .yili{
+  margin-right: 100rpx;
+  
+}
+.list_box{
+  position: fixed;
+  background-color: #fbe6c4;
+  width: 94%;
+  left: 3%;
+  top: 140rpx;
+  bottom: 140rpx;
+  border-radius: 10px;
+}
+.list_box .zhou_y{
+  position: absolute;
+  top: 6%;
+  bottom: 6%;
+  left: 3%;
+  right: 3%;
+  overflow-y: auto;
+}
+.list_box .list{
+  background-color: #f9d59b;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3%;
+  box-sizing: border-box;
+  margin-bottom: 3%;
+  position: relative;
+}
+.list_box .list .win{
+  position: absolute;
+ left:101rpx;
+bottom:24rpx;
+width:60rpx;
+height:40rpx;
+  display: none;
+}
+.list_box .list .win.on{
+  display: block;
+}
+.list_box .list .num{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+  border: 1px solid #ff4320;
+  color: #ff4320;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-weight: 700;
+  margin: 26rpx 20rpx 0 0;
+}
+.list_box .list .img{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+.list_box .list .name{
+  font-size: 28rpx;
+  margin-top: 6rpx;
+}
+.list_box .list .leven{
+  margin-top: 16rpx;
+}
+.list_box .list .leven image{
+  width: 40rpx;
+  height: 35rpx;
+}
+.list_box .list .leven view{
+  padding:0 10rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  background-color: #fff;
+  text-align: center;
+  font-size: 20rpx;
+  border-radius: 25rpx;
+  margin-left: 15rpx;
+}
+.list_box .lists .num{
+  border: 1px solid #222;
+  color: #222;
+}
+.list_box .list .cishu{
+  font-size: 24rpx;
+  color: #7A7574;
+  margin-top: 32rpx;
+}
