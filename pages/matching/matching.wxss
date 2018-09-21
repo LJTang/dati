@@ -457,3 +457,17 @@ page{
 .fail .fen .right{
   width:53%;
 }
+
+
+button{
+  background:none;
+  padding:0;
+  display:flex;
+  vertical-align:top;
+  font-size:32rpx;
+  color:#fff;
+}
+button text{
+line-height:80rpx;
+margin-left: 10rpx;
+}

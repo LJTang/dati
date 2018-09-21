@@ -1,4 +1,5 @@
 <view class='pd_box' hidden="{{pipei_Bool}}">
+<!--<view class='pd_box' hidden="true">-->
   <image class='back' src="../../img/pdback.png"></image>
   <view class='center'>
     <image class='quan' src='../../img/peiduiq.png'></image>
@@ -14,6 +15,7 @@
 
 <!-- 游戏 -->
 <view class='game_box' hidden="{{game_Bool}}">
+<!--<view class='game_box' hidden="true">-->
   <image class="vs" src="../../img/vs.png"></image>
   <view class='vs_box cf'>
     <view class='cf left_box fl'>
@@ -50,11 +52,12 @@
       </button>
     </view>
 
-    <view class='copyright'>本题由<text>河南森软信息技术有限公司</text>提供</view>
+    <view class='copyright'>本题由<text>广脉信息技术有限公司</text>提供</view>
   </view>
 </view>
 <!-- 成功 -->
 <view class='success jieguo' hidden="{{success}}">
+<!--<view class='success jieguo' hidden="">-->
   <image class="vs" src="../../img/vs.png"></image>
   <view class='vs_box cf'>
     <view class='cf left_box fl'>
@@ -79,7 +82,7 @@
         <view class='fl'>1级</view>
         <view class='fl xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
       </view>
-      <view class='num fl'>230分</view>
+      <view class='num fl'>{{game_over.play1.fen}}分</view>
     </view>
     <view class='left fr right'>
       <image class='sj' src='../../img/lan.png'></image>
@@ -87,16 +90,16 @@
         <view class='fr'>1级</view>
         <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
       </view>
-      <view class='num'>230分</view>
+      <view class='num'>{{game_over.play2.fen}}分</view>
     </view>
   </view>
   <view class='result'>
     <image class='back' src='../../img/ty.png'></image>
-    <view class='text'><image src='../../img/bi.png'></image> +27</view>
+    <view class='text'><image src='../../img/bi.png'></image> +{{jiang}}</view>
   </view>
   <view>
-    <view class='jixu'>继续挑战</view>
-    <view class='fenxiang'><image src='../../img/bi.png'></image> 炫耀成绩</view>
+    <view class='jixu' bindtap="challenge">继续挑战</view>
+    <view class='fenxiang'><button open-type="share"><image src='../../img/bi.png'></image><text>炫耀成绩</text></button></view>
   </view>
   <view class='fenx'>
     <view>分享到微信圈</view>
@@ -111,15 +114,15 @@
   <view class='vs_box cf'>
     <view class='cf left_box fl'>
       <view class='img_box fl'>
-        <image class='fr img' src='../../img/touxiang.jpg'></image>
+        <image class='fr img' src='{{play[0][0].avatar}}'></image>
       </view>
-      <view class='fl name omit'>大神</view>
+      <view class='fl name omit'>{{play[0][0].name}}</view>
     </view>
     <view class='cf right_box fr'>
       <view class='img_box fr'>
-        <image class='fl img' src='../../img/touxiang.jpg'></image>
+        <image class='fl img' src='{{play[1][0].avatar}}'></image>
       </view>
-      <view class='fr name omit'>大神</view>
+      <view class='fr name omit'>{{play[1][0].name}}</view>
     </view>
   </view>
   <view class='fen cf'>
@@ -129,7 +132,7 @@
         <view class='fr'>1级</view>
         <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
       </view>
-      <view class='num'>230分</view>
+      <view class='num'>{{game_over.play1.fen}}分</view>
     </view>
     <view class='left fr right'>
       <image class='sj' src='../../img/lan.png'></image>
@@ -137,7 +140,7 @@
         <view class='fr'>1级</view>
         <view class='fr xing_box cf'><image src='../../img/xing.png'></image><image src='../../img/xing.png'></image></view>
       </view>
-      <view class='num'>230分</view>
+      <view class='num'>{{game_over.play2.fen}}分</view>
     </view>
   </view>
   <view class='result'>
@@ -145,8 +148,8 @@
     <view>挑战失败</view>
   </view>
   <view>
-    <view class='jixu'>继续挑战</view>
-    <view class='fenxiang'><image src='../../img/bi.png'></image> 分享结果</view>
+    <view class='jixu'bindtap="challenge">继续挑战</view>
+    <view class='fenxiang'><button open-type="share"><image src='../../img/bi.png'></image><text>分享结果</text></button></view>
   </view>
   <view class='fenx'>
     <view>分享到微信圈</view>

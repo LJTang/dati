@@ -116,6 +116,9 @@ var that=this;
      // 排位比赛
     jump_PK:function(){
         var that=this;
+        // wx.navigateTo({
+        //     url: '/pages/matching/matching'
+        // })
         if(this.data.you_volume==0){
             that.setData({
                 fail: true,
